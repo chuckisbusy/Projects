@@ -1,0 +1,58 @@
+
+         _              _             _____   ____  
+        / \     _   _  | |_    ___   |___ /  |  _ \ 
+       / _ \   | | | | | __|  / _ \    |_ \  | | | |
+      / ___ \  | |_| | | |_  | (_) |  ___) | | |_| |
+     /_/   \_\  \__,_|  \__|  \___/  |____/  |____/  2.3.1
+              // Generating low-energy 3D structures                                      
+    
+================================================================================
+                               INPUT PARAMETERS
+================================================================================
+path: ../data/sildnafil.smi
+k: 1
+window: False
+verbose: False
+job_name: 20250430-122129-895234
+enumerate_tautomer: True
+tauto_engine: rdkit
+pKaNorm: True
+isomer_engine: rdkit
+enumerate_isomer: True
+mode_oe: classic
+mpi_np: 4
+max_confs: 10
+use_gpu: False
+capacity: 42
+gpu_idx: 0
+optimizing_engine: ANI2xt
+patience: 200
+opt_steps: 5000
+convergence_threshold: 0.003
+threshold: 0.3
+memory: None
+batchsize_atoms: 1024
+input_format: smi
+================================================================================
+                               RUNNING PROCESS
+================================================================================
+Checking input file...
+	There are 1 SMILES in the input file ../data/sildnafil.smi. 
+	All SMILES and IDs are valid.
+Suggestions for choosing isomer_engine and optimizing_engine: 
+	Isomer engine options: RDKit and Omega.
+	Optimizing engine options: ANI2x, ANI2xt, AIMNET or your own NNP.
+The available memory is 62 GB.
+The task will be divided into 1 jobs.
+Job1, number of inputs: 1
+
+
+Isomer generation for job1
+Enumerating tautomers for the input...
+Tautomers are saved in /home/cadeniran/Github/Projects/Cheminformatics/Cheminformatics_Tutorial/data/sildnafil_20250430-122129-895234/job1/smi_taut.smi
+
+
+Optimizing on job1
+Energy unit: Hartree if implicit.
+Program running time: 1 minute(s)
+Output path: /home/cadeniran/Github/Projects/Cheminformatics/Cheminformatics_Tutorial/data/sildnafil_20250430-122129-895234/sildnafil_out.sdf
