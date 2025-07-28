@@ -2,7 +2,7 @@
 #
 
 BASE_URL="https://opm-assets.storage.googleapis.com/pdb"
-out="/data/storage/cadeniran/pdbs"
+out="$HOME/Downloads/pdbs"
 
 while IFS= read -r line; do
     echo "Downloading from OPM database: $line.pdb"
